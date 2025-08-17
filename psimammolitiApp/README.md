@@ -1,12 +1,59 @@
-# React + Vite
+# React + Vite — Prueba tecnica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación mínima con **React + Vite** que incluye:  
+- **Login con sesión persistente en `localStorage`**  
+- **Material UI** para una UI responsive  
+- **React Router** para manejar múltiples páginas (Login y Home)  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Requisitos
+- [Node.js](https://nodejs.org/) 18+  
+- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Instalación y ejecución en local
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone <url-del-repo>
+   cd <carpeta-del-proyecto>
+   ```
+
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   ```
+
+3. **Levantar la app en modo desarrollo**
+   ```bash
+   npm run dev
+   ```
+
+4. **Abrir en el navegador**
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 🔑 Usuario Dummy
+
+Para ingresar, usá estas credenciales:
+
+- **Email:** `demo@demo.com`  
+- **Password:** `123456`  
+
+---
+
+## 🧩 Tecnologías principales
+- [React](https://react.dev/)  
+- [Vite](https://vitejs.dev/)  
+- [Material UI](https://mui.com/)  
+- [React Router](https://reactrouter.com/)  
+
+---
+
+## 💡 Nota sobre el desarrollo
+Durante el desarrollo de esta prueba técnica, se utilizó **ChatGPT** como herramienta de apoyo para acelerar la implementación y mantener buenas prácticas en React, MUI y Router.  
