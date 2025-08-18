@@ -1,13 +1,15 @@
 import { Box, Grid, Paper, Typography, Button } from "@mui/material";
 import { groupByDay } from "../utils/time";
 
-export default function AvailabilityGrid({ availabilityIso = [], onPickSlot }) {
+export default function AvailabilityGrid({ availabilityIso = [], onPickSlot, modalityLabel }) {
   const days = groupByDay(availabilityIso);
 
   if (!days.length) {
     return (
       <Paper variant="outlined" sx={{ p: 3 }}>
-        <Typography variant="body1">No hay horarios disponibles esta semana.</Typography>
+        <Typography variant="body1">
+          No hay horarios disponibles {modalityLabel ? `para ${modalityLabel}` : ""} esta semana.
+        </Typography>
       </Paper>
     );
   }
