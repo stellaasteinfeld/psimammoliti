@@ -1,7 +1,7 @@
 import { Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Button } from "@mui/material";
 import { tz, toLocal } from "../utils/time";
 
-export default function ScheduleDialog({ open, onClose, onConfirm, psychologist, slotIso }) {
+export default function ScheduleDialog({ open, onClose, onConfirm, psychologist, slotIso, modality }) {
   const local = slotIso ? toLocal(slotIso) : null;
   return (
     <Dialog open={open} onClose={onClose} fullWidth maxWidth="sm">
@@ -9,8 +9,8 @@ export default function ScheduleDialog({ open, onClose, onConfirm, psychologist,
       <DialogContent>
         <DialogContentText>
           Psicólogo/a: <strong>{psychologist?.name}</strong><br/>
+          Modalidad: <strong>{modality === "presencial" ? "Presencial" : "Online"}</strong><br/>
           Fecha y hora (tu zona): <strong>{local ? `${local.weekday}, ${local.date.toLocaleDateString()} ${local.timeLabel}` : "-"}</strong><br/>
-          Modalidad: <strong>Online</strong><br/>
           Zona horaria detectada: <strong>{tz}</strong>
         </DialogContentText>
       </DialogContent>
